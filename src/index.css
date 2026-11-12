@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face { font-family: "Awesome Serif Tall"; font-weight: 700; font-display: swap;
+  src: url("https://framerusercontent.com/assets/VeuudkO5Y2qde9Wi0HeUMkb7QU.woff2") format("woff2"); }
+@font-face { font-family: "Awesome Serif XT"; font-weight: 700; font-display: swap;
+  src: url("https://framerusercontent.com/assets/qqpvxJ6sAC8egvrrqmpAzHEN2Qg.woff2") format("woff2"); }
+@font-face { font-family: "Awesome Serif Reg"; font-weight: 700; font-display: swap;
+  src: url("https://framerusercontent.com/assets/vCc4Q3gWUHYS6zTOMhKmLUtt4.woff2") format("woff2"); }
+
+@theme {
+  --font-tall: "Awesome Serif Tall", "Times New Roman", serif;
+  --font-xt: "Awesome Serif XT", "Times New Roman", serif;
+  --font-reg: "Awesome Serif Reg", "Times New Roman", serif;
+  --font-hand: "Gaegu", cursive;
+  --font-geist: "Geist", Arial, sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --font-inter: "Inter", Arial, sans-serif;
+  --color-ink: #383838;
+  --color-blue: #336bcc;
+  --color-fire: #ff4800;
+  --color-forest: #0c4130;
+  --color-lemon: #ebee58;
+  --animate-marquee: marquee 40s linear infinite;
+  @keyframes marquee { to { transform: translateX(-50%); } }
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { margin: 0; font-family: var(--font-geist); color: var(--color-ink); background: #fff; -webkit-font-smoothing: antialiased; }
+@media (prefers-reduced-motion: reduce) { .animate-marquee { animation: none; } html { scroll-behavior: auto; } }
